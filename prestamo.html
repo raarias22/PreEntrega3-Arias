@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Tag de Viewport -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <!-- CDN de Bootstrap del CSS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- CDN de Bootstrap del JS -->
+    <link rel="stylesheet" href="css/prestamo.css" />
+    <script src="js/prestamo.js"></script>
+    <title>Simulador de Prestamo</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Conversor de Divisas</a>
+        <a class="navbar-brand" href="prestamo.html">Calcular Préstamos</a>
+      </div>
+    </nav>
+
+    <div class="form">
+      <h1>SIMULADOR DE PRESTAMO</h1>
+      <form>
+        <div>
+          <label for="capital"
+            >CAPITAL
+            <input
+              type="text"
+              placeholder="Ingrese el capital prestado"
+              id="capital"
+            />
+            <i class="fas fa-coins"></i>
+          </label>
+        </div>
+        <div>
+          <label for="couta"
+            >CUOTAS
+            <input
+              type="text"
+              placeholder="Ingrese las cuotas del prestamo"
+              id="couta"
+            />
+            <i class="far fa-calendar-alt"></i>
+          </label>
+        </div>
+        <div>
+          <label for="interes"
+            >INTERES
+            <input
+              type="text"
+              placeholder="Ingrese el interés a generar"
+              id="interes"
+            />
+            <i class="fas fa-hand-holding-usd"></i>
+          </label>
+        </div>
+      </form>
+      <button onclick="gen_table();">CALCULAR</button>
+
+      <hr />
+      <table class="tab">
+        <thead>
+          <tr>
+            <td>NRO</td>
+            <td>CAPITAL</td>
+            <td>INTERES</td>
+            <td>IMPORTE A PAGAR</td>
+          </tr>
+        </thead>
+        <tbody id="tab"></tbody>
+        <tfoot>
+          <tr>
+            <td class="ft">TOTAL</td>
+            <td id="t1"></td>
+            <td id="t2"></td>
+            <td id="t3"></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>

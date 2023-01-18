@@ -1,25 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Tag de Viewport -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <!-- CDN de Bootstrap del CSS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- CDN de Bootstrap del JS -->
     <title>CAMBIO DIVISAS</title>
     <script src="js/script.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <h3>CAMBIO DE DIVISAS</h3>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Conversor de Divisas</a>
+        <a class="navbar-brand" href="prestamo.html">Calcular Préstamos</a>
+      </div>
+    </nav>
+
+    <h1>CAMBIO DE DIVISAS</h1>
+
     <form class="formulario">
-        <p>Seleccionar moneda</p>
-        <input type="radio" name="cambio" id="uno">Dólar
-        <input type="radio" name="cambio" id="dos">Euro
-        <p>Ingrese monto</p>
-        <input type="number" id="valor" min="1" max="100000">
-        <br>
-        <br>
-        <input type="button" id="cotizador" value="Convertir" onclick="convertir()">
+      <p>Seleccionar moneda</p>
+      <input type="radio" name="cambio" id="uno" />Dólar
+      <input type="radio" name="cambio" id="dos" />Euro
+      <p>Ingrese monto</p>
+      <input type="number" id="valor" min="1" max="100000" />
+      <br />
+      <br />
+      <input
+        type="button"
+        id="cotizador"
+        value="Convertir"
+        onclick="convertir()"
+      />
     </form>
-    
-</body>
+  </body>
 </html>
