@@ -1,3 +1,16 @@
+body {
+  background: url(../assets/imagen3.jpg); 
+  background-size: cover;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	display: grid;
+	min-height: 100vh;
+	width: 100%;
+	grid-template-rows: auto 1fr auto;
+	z-index: 1000;
+	border-style: double;
+	border: 1.5px;
+}
+
 h1 {
   text-align: center;
   font-family: "arial";
@@ -7,10 +20,14 @@ label {
   font-weight: bold;
 }
 .form {
-  width: 550px;
-  margin: 0 auto;
-  margin-top: 80px;
-  border: 2px;
+  margin: 20px;
+  font-size: 19px;
+  font-family: monospace;
+  text-align: center;
+  position: static;
+  backdrop-filter: blur(1px);
+  background-color: rgba(35, 101, 128, 0.575);
+  border: 1.5px inset rgb(255, 255, 255);
 }
 input {
   width: 200px;
@@ -21,16 +38,7 @@ input {
   border: #173441 1.8px solid;
 }
 
-button {
-  background-color: #fdfef7;
-  border: #173441 1.8px solid;
-  width: 100px;
-  font-family: "arial";
-  font-size: 15px;
-  border-radius: 2px;
-  padding: 10px;
-  margin-left: 77%;
-}
+
 
 .tab {
   border-collapse: collapse;
@@ -51,3 +59,16 @@ tr {
 td {
   border: #173441 2px solid;
 }
+
+
+.footer{
+  background-color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 200;
+  color: white;
+  padding: 2em;
+  text-align: center;
+  bottom: 0;
+  border: 1px;
+  border-style: double;
+ }

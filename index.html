@@ -11,14 +11,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <!-- CDN de Bootstrap del JS -->
     <title>CAMBIO DIVISAS</title>
-    <script src="js/script.js" defer></script>
+    
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
   </head>
 
-  <body>
+  <body class="bg-secondary">
 
 
-    <nav class="navbar navbar-expand-sm bg-dark">
+    <nav class="navbar navbar-sm bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Conversor de Divisas</a>
         <a class="navbar-brand" href="nosotros.html">Sobre nosotros</a>
@@ -36,9 +37,21 @@
       <input type="number" id="valor" min="1" max="100000" />
       <br />
       <br />
-      <input
-        type="button" id="cotizador" value="Convertir" onclick="convertir()"class="btn btn-success"/>
+      <input type="button" id="cotizador" value="Convertir" onclick="convertir()"class="btn btn-success"/>
     </form>
+
+    
+
+    <footer>
+      <div class="footer">
+          <p class="footer-links">
+              <a href="index.html">Inicio</a>
+              <a href="nosotros.html">Sobre nosotros</a>
+              <a href="prestamo.html">Calcular préstamos</a>
+          </p>
+          <p>ECO SUR &copy; Copyright 2023</p>
+      </div>
+  </footer>
     
   </body>
 </html>
