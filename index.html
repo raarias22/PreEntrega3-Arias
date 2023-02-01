@@ -11,14 +11,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <!-- CDN de Bootstrap del JS -->
     <title>CAMBIO DIVISAS</title>
-    
+    <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <nav class="navbar navbar-light bg-light">
+
+
+    <nav class="navbar navbar-expand-sm bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Conversor de Divisas</a>
+        <a class="navbar-brand" href="nosotros.html">Sobre nosotros</a>
         <a class="navbar-brand" href="prestamo.html">Calcular Préstamos</a>
       </div>
     </nav>
@@ -34,12 +37,8 @@
       <br />
       <br />
       <input
-        type="button"
-        id="cotizador"
-        value="Convertir"
-        onclick="convertir()"
-      />
+        type="button" id="cotizador" value="Convertir" onclick="convertir()"class="btn btn-success"/>
     </form>
-    <script src="js/script.js"></script>
+    
   </body>
 </html>

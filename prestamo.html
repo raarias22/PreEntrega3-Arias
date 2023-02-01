@@ -11,13 +11,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <!-- CDN de Bootstrap del JS -->
     <link rel="stylesheet" href="css/prestamo.css" />
-    
+    <script src="js/prestamo.js" defer></script>
     <title>Simulador de Prestamo</title>
   </head>
   <body>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Conversor de Divisas</a>
+        <a class="navbar-brand" href="nosotros.html">Sobre nosotros</a>
         <a class="navbar-brand" href="prestamo.html">Calcular Préstamos</a>
       </div>
     </nav>
@@ -59,7 +60,7 @@
           </label>
         </div>
       </form>
-      <button onclick="gen_table();">CALCULAR</button>
+      <button onclick="gen_table();" class="btn btn-success">CALCULAR</button>
 
       <hr />
       <table class="tab">
@@ -82,6 +83,6 @@
         </tfoot>
       </table>
     </div>
-    <script src="js/prestamo.js"></script>
+    
   </body>
 </html>
