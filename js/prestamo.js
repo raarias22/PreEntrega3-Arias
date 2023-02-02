@@ -29,6 +29,10 @@ function gen_table() {
     document.getElementById("t2").innerHTML = d4;
     document.getElementById("t3").innerHTML = d5;
   } else {
-    swal("Falta ingresar un Número");
+    swal({
+      title: "Cuidado!",
+      text: "Tienes que completar los campos",
+      icon: "warning",
+    });
   }
 }
