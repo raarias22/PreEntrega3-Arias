@@ -6,11 +6,24 @@ function convertir() {
   let euro = 0.024;
   if (document.getElementById("uno").checked) {
     resultado = valore / dolar;
-    swal("El cambio de Dolares a Pesos Uruguayos es: $" + resultado.toFixed(2));
+    swal({
+      text: "El cambio de Dolares a Pesos Uruguayos es: $" + resultado.toFixed(2),
+      icon: "success"
+      });
   } else if (document.getElementById("dos").checked) {
     resultado = valore / euro;
-    swal("El cambio de Euros a Pesos Uruguayos es: $" + resultado.toFixed(2));
+    swal({
+      text: "El cambio de Euros a Pesos Uruguayos es: $" + resultado.toFixed(2),
+      icon: "success",
+    });
   } else {
-    swal("Tienes que ingresar el monto");
+    swal({
+      title: "Cuidado!",
+      text: "Tienes que ingresar un monto",
+      icon: "warning",
+    });
   }
 }
+
+
+
