@@ -3,6 +3,12 @@ function gen_table() {
   let n = Number(document.getElementById("capital").value);
   let n2 = Number(document.getElementById("cuota").value);
   let n3 = Number(document.getElementById("interes").value);
+  let misPrestamos = localStorage.getItem("misPrestamos")||[]
+  
+  localStorage.setItem("misPrestamos", [ 
+    ...misPrestamos, {capital:n, cuotas:n2, interes:n3}
+  ])
+
   if (n > 0) {
     for (i = 1; i <= n2; i++) {
       ca = n / n2;
@@ -35,4 +41,6 @@ function gen_table() {
       icon: "warning",
     });
   }
+
 }
+
