@@ -44,3 +44,8 @@ function gen_table() {
 
 }
 
+fetch("https://raarias22.github.io/PreEntrega3-Arias/prestamo.html")
+.then( (resp) => resp.json())
+.then( (data) => {
+  console.log(data)
+})
